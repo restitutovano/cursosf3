@@ -1,0 +1,18 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}Producto update{% endblock %}
+
+{% block body %}
+    <div>
+        <form method="post" action="{{ path('app_producto_doUpdate') }}">
+            <input type="hidden" name="id" value="{{ prod.id }}">{{ prod.id }}<br>
+            Nombre: <input type="text" name="nombre" value="{{ prod.nombre }}"><br>
+            Descripción: <input type="text" name="descripcion" value="{{ prod.descripcion }}"><br>
+            Precio: <input type="number" step="any" name="precio" value="{{ prod.precio }}"><br>
+            {{ prod.createdAt |date("d/m/Y H:i:s") }}<br>
+            {{ prod.updatedAt |date("d/m/Y H:i:s") }}<br>
+
+            <input type="submit" value="update">
+        </form>
+    </div>
+{% endblock %}

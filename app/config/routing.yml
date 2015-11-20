@@ -1,0 +1,23 @@
+user:
+    resource: "@AppBundle/Controller/UsersController.php"
+    type:     annotation
+    prefix:   /user
+
+producto:
+    resource: "@AppBundle/Controller/ProductoController.php"
+    type:     annotation
+    prefix:   /producto
+
+categoria:
+    resource: "@AppBundle/Controller/CategoriaController.php"
+    type:     annotation
+    prefix:   /categoria
+
+calc:
+    resource: "@AppBundle/Controller/CalculadoraController.php"
+    type:     annotation
+    prefix:   /calculadora
+
+home:
+    resource: "@AppBundle/Controller/HomeController.php"
+    type:     annotation

@@ -1,0 +1,14 @@
+{% extends '::base.html.twig' %}
+
+{%  block title %}introducir Usuario{% endblock %}
+
+{% block body %}
+    <div>
+        <form method="post" action="{{ path('app_user_doIntro') }}">
+            Usuario: <input type="text" name="username" href><br>
+            Contraseña: <input type="text" name="password"><br>
+            email: <input type="text" name="email"><br>
+            <input type="submit" name="Crear">
+        </form>
+    </div>
+{% endblock %}

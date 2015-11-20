@@ -1,0 +1,13 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}Portada ejercicios Curso Symfony{% endblock %}
+
+{% block body %}
+    <ul>
+        <li><a href="{{ path('app_home_index') }}">Portada</a> </li>
+        <li><a href="{{ path('app_calculadora_index') }}">Calculadora</a> </li>
+        <li><a href="{{ path('app_user_index') }}">Gestión Usuarios</a> </li>
+        <li><a href="{{ path('app_producto_index') }}">Gestión Productos</a> </li>
+        <li><a href="{{ path('app_categoria_index') }}">Gestión Categorías</a> </li>
+    </ul>
+{% endblock %}

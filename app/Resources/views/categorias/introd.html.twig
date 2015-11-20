@@ -1,0 +1,11 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}Nueva Categoría{% endblock %}
+
+{% block body %}
+    <form method="post" action="{{ path('app_categoria_doNuevo') }}">
+        Nombre: <input type="text" name="nombre"><br>
+        Descripción: <input type="text" name="descripcion"><br>
+        <input type="submit" name="Crear">
+    </form>
+{% endblock %}

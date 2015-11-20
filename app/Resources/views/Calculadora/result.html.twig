@@ -1,0 +1,11 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}Resultados{% endblock %}
+
+{% block body %}
+    <div>
+        <p style="height: 88px; border: 1px solid blue;">El resultado de <span style="color:blue; font-size: 120%">{{ op1 }}</span> {{ operacion }} <span style="color:blue; font-size: 120%">{{ op2 }}</span> es: <span style="color:blue; font-size: 130%">{{ result }}</span></p>
+        <a href="{{ path('app_calculadora_index') }}">Volver a la calculadora</a>
+    </div>
+
+{% endblock %}

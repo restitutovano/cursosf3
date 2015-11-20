@@ -1,0 +1,15 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}Actualizar{% endblock %}
+
+{% block body %}
+    <form method="post" action="{{ path('app_categoria_doUpdate') }}">
+        {{ cat.id }}<input type="hidden" name="id" value="{{ cat.id }}"><br>
+        Nombre: <input type="text" name="nombre" value="{{ cat.nombre }}"><br>
+        Descripción: <input type="text" name="descripcion" value="{{ cat.descripcion }}"><br>
+        Fecha de creación: {{ cat.createdAt |date("d/m/Y H:i:s") }}<br>
+        Fecha de última modificación: {{ cat.updatedAt |date("d/m/Y H:i:s") }}<br>
+
+        <input type="submit" value="Modificar">
+    </form>
+{% endblock %}

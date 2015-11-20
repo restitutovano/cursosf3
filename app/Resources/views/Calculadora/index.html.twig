@@ -1,0 +1,14 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}Calculadora{% endblock %}
+
+{% block body %}
+    <ul>
+        <li><a href="{{ path('app_home_index') }}">Home</a> </li><br>
+        <li><a href="{{ path('app_calculadora_sum') }}">Suma</a> </li>
+        <li><a href="{{ path('app_calculadora_res') }}">Resta</a> </li>
+        <li><a href="{{ path('app_calculadora_mult') }}">Multiplicación</a> </li>
+        <li><a href="{{ path('app_calculadora_div') }}">División</a> </li>
+        <li><a href="{{ path('app_calculadora_pot') }}">Potencia</a> </li>
+    </ul>
+{% endblock %}
